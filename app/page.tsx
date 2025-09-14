@@ -147,7 +147,7 @@ export default function HomePage() {
                   <div>
                     <p className="font-medium text-foreground">E-Mail</p>
                     <a href="mailto:monis.alltagshilfe@gmail.com" className="text-primary hover:underline break-all">
-                      alltagshilfe.malsch@gmail.com
+                      alltagshilfe.malsch@proton.me
                     </a>
                   </div>
                 </div>
