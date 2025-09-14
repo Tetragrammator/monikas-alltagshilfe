@@ -10,31 +10,28 @@ export default function HomePage() {
           <div className="mb-6">
             <img
               src="/moni.png"
-              alt="Moni - Ihre Alltagshelferin"
+              alt="Monika - Professionelle Alltagshelferin für Kinderbetreuung und Seniorenbegleitung in Karlsruhe und Malsch"
               className="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto border-4 border-white shadow-lg"
             />
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance leading-[3.5rem]">
-            Persönliche Alltagshilfe für&nbsp;
+            Alltagshilfe in&nbsp;
             <br />
             Malsch, Karlsruhe und Umgebung
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-6 text-pretty">
             Ich bin Monika und helfe gerne Familien und Senioren im Alltag.
           </p>
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            
-            
-          </div>
+          <div className="flex items-center justify-center gap-2 text-muted-foreground"></div>
         </div>
       </header>
 
       {/* About Section */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4" aria-labelledby="about-heading">
         <div className="max-w-4xl mx-auto">
           <Card className="bg-card border-border shadow-sm">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl text-foreground flex items-center justify-center gap-2">
+              <CardTitle id="about-heading" className="text-2xl text-foreground flex items-center justify-center gap-2">
                 <Heart className="w-6 h-6 text-primary" />
                 Über mich
               </CardTitle>
@@ -65,9 +62,11 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 px-4 bg-muted/30">
+      <section className="py-12 px-4 bg-muted/30" aria-labelledby="services-heading">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Was ich geben kann</h2>
+          <h2 id="services-heading" className="text-3xl font-bold text-center mb-12 text-foreground">
+            Meine Dienstleistungen in Karlsruhe und Malsch
+          </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Kinderbetreuung */}
             <Card className="bg-card border-border shadow-sm hover:shadow-md transition-shadow">
@@ -75,11 +74,12 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl text-foreground">Kinderbetreuung</CardTitle>
+                <CardTitle className="text-xl text-foreground">Kinderbetreuung Karlsruhe</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-muted-foreground leading-relaxed">
-                  Sicheres Abholen von der Schule oder eine verantwortungsvolle Betreuung Ihrer Kinder. Mit Geduld und Erfahrung sorge ich dafür, dass sich Ihre Kleinen wohlfühlen.
+                  Sicheres Abholen von der Schule oder eine verantwortungsvolle Betreuung Ihrer Kinder. Mit Geduld und
+                  Erfahrung sorge ich dafür, dass sich Ihre Kleinen wohlfühlen.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -90,7 +90,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-secondary" />
                 </div>
-                <CardTitle className="text-xl text-foreground">Seniorenbegleitung</CardTitle>
+                <CardTitle className="text-xl text-foreground">Seniorenbegleitung Malsch</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-muted-foreground leading-relaxed">
@@ -106,11 +106,12 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <ShoppingBag className="w-8 h-8 text-accent" />
                 </div>
-                <CardTitle className="text-xl text-foreground">Alltagsunterstützung</CardTitle>
+                <CardTitle className="text-xl text-foreground">Alltagsunterstützung Baden-Württemberg</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-muted-foreground leading-relaxed">
-                  Hilfe bei Behördengängen, Besorgungen oder anderen alltäglichen Aufgaben. Fragen Sie gerne nach und ich kann sagen, ob ich weiterhelfen kann.                    
+                  Hilfe bei Behördengängen, Besorgungen oder anderen alltäglichen Aufgaben. Fragen Sie gerne nach und
+                  ich kann sagen, ob ich weiterhelfen kann.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -119,16 +120,20 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4" aria-labelledby="contact-heading">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Kontakt aufnehmen</h2>
+          <h2 id="contact-heading" className="text-3xl font-bold text-center mb-12 text-foreground">
+            Kontakt aufnehmen
+          </h2>
 
           {/* Wrapper zentriert die Karte horizontal */}
           <div className="flex justify-center">
             <Card className="w-full max-w-xl bg-card border-border shadow-sm">
               <CardHeader>
                 <CardTitle className="text-xl text-foreground">Direkt erreichen</CardTitle>
-                <CardDescription className="text-muted-foreground">Schreiben Sie mir gerne eine E-Mail.</CardDescription>
+                <CardDescription className="text-muted-foreground">
+                  Schreiben Sie mir gerne eine E-Mail.
+                </CardDescription>
               </CardHeader>
 
               <CardContent className="space-y-4">
@@ -146,7 +151,7 @@ export default function HomePage() {
                   <Mail className="w-5 h-5 text-primary" aria-hidden="true" />
                   <div>
                     <p className="font-medium text-foreground">E-Mail</p>
-                    <a href="mailto:monis.alltagshilfe@gmail.com" className="text-primary hover:underline break-all">
+                    <a href="mailto:alltagshilfe.malsch@proton.me" className="text-primary hover:underline break-all">
                       alltagshilfe.malsch@proton.me
                     </a>
                   </div>
@@ -168,8 +173,9 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-muted/20 py-8 px-4 border-t border-border">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-muted-foreground mb-2">© 2025 Alltagshilfe Karlsruhe, Malsch und Umgebung</p>
-          
+          <p className="text-muted-foreground mb-2">
+            © 2025 Alltagshilfe Malsch in Karlsruhe und Umgebung - Kinderbetreuung & Seniorenbegleitung
+          </p>
         </div>
       </footer>
     </div>
